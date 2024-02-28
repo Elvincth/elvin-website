@@ -12,6 +12,18 @@ import "@/styles/tailwind.css";
 //     "Explore John Doe's portfolio created during the portfolio workshop.",
 // };
 
+//This is the type of the metadata
+import type { Metadata } from "next";
+
+// Here we define the metadata for the site
+// The metadata is used to define the title and description of the site
+// The metadata is used by search engines and social media platforms
+export const metadata: Metadata = {
+  title: "Elvin",
+  description:
+    "Explore John Doe's portfolio created during the portfolio workshop.",
+};
+
 //Here is the root layout which shared across all pages
 //This layout includes the header and the main content
 export default function RootLayout({
@@ -26,7 +38,7 @@ export default function RootLayout({
         {/*  This is the favicon using an SVG */}
         <link
           rel="icon"
-          href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>"
+          href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⭐</text></svg>"
         />
         <Header />
         {/*The container is to keep the content centered and with a max-width in larger screens the content won't be too wide */}
